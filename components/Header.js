@@ -5,7 +5,7 @@ import logo from '../public/logo.jpg';
 export default function Header() {
     return (
         <header>
-           <nav className="bg-red-900 md:px-2 px-1 py-4 shadow-2xl">
+           <nav className="bg-red-900 md:px-2 px-2 py-4 shadow-2xl">
                <div dir="rtl" className=" flex justify-between items-center">
                     <Logo />
                     <SiteNav />
@@ -21,11 +21,11 @@ function Logo() {
             <a>
                 {/* <span className="bg-white inset-0 transform rounded "> */}
                 {/* </span> */}
-                <div className="relative bg-white pb-5 px-3 transform skew-x-12 rounded-xl">
+                <div className="relative bg-white pb-5 px-5 transform skew-x-12 rounded-xl">
 
 
             <Image width={100} height={40} className="rounded-lg" src={logo} alt="logo" />
-                <p className="absolute text-xs text-black font-medium m-0">
+                <p className="absolute text-xs text-red-700 font-semibold m-0">
             مركز الحجامة للطب البديل
                 </p>
                 </div>
