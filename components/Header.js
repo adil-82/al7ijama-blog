@@ -25,7 +25,7 @@ function Logo() {
 
 
             <Image width={100} height={40} className="rounded-lg" src={logo} alt="logo" />
-                <p className="absolute text-xs text-black font-semibold m-0">
+                <p className="absolute text-xs text-black font-medium m-0">
             مركز الحجامة للطب البديل
                 </p>
                 </div>
