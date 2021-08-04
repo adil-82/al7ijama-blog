@@ -19,7 +19,7 @@ export default function Home({posts}) {
       </Head>
 
       <main className="max-w-3xl mx-auto px-3 ">
-      <div className=" px-8 py-20 text-center">
+      <div className=" md:px-8 px-5 py-8 text-center">
           <Hero /> 
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">    

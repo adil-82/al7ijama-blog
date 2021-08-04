@@ -10,7 +10,7 @@ export default function PostPage({frontmatter: {title, date, cover_image}, slug,
             <Link href="/">
                 <a className="inline-block bg-gray-300 text-gray-700 border-none rounded-md cursor-pointer text-base m-4 py-2 px-4 hover:bg-gray-500 hover:text-white no-underline">رجوع الى الرئيسية</a>
             </Link>
-            <div className="bg-red-100 py-4 md:px-24 sm:px-4 px-2 mx-16 rounded-xl shadow-2xl">
+            <div className="bg-red-100 py-4 md:px-24 sm:px-4 px-2 md:mx-16 ms:mx-6 mx-4 rounded-xl shadow-2xl">
                 <h1 className="my-3 text-3xl font-extrabold text-center">
                     {title}
                 </h1>
