@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../public/logo.jpg';
+
 export default function Header() {
     return (
         <header>
-           <nav className="bg-blue-500 text-blue-100 px-8 py-4">
-               <div className="max-w-7xl mx-auto md:flex justify-between">
+           <nav className="bg-red-900 px-8 py-4 shadow-2xl">
+               <div dir="rtl" className="max-w-5xl mx-auto flex justify-between">
                     <Logo />
                     <SiteNav />
                </div>
@@ -15,11 +18,17 @@ export default function Header() {
 function Logo() {
     return (
         <Link href="/">
-            <a className="relative inline-block p-2">
-                <span className="bg-white absolute inset-0 transform rounded skew-y-1 skew-x-12"></span>
-                <span className="relative font-bold text-blue-800 text-2xl">
-                    Dev Blog
-                </span>
+            <a>
+                {/* <span className="bg-white inset-0 transform rounded "> */}
+                {/* </span> */}
+                <div className="relative bg-white pb-5 px-3 transform skew-x-12 rounded-xl">
+
+
+            <Image width={100} height={40} className="rounded-lg" src={logo} alt="logo" />
+                <p className="absolute text-xs text-black font-semibold m-0">
+            مركز الحجامة للطب البديل
+                </p>
+                </div>
             </a>
         </Link>
     )
@@ -27,10 +36,10 @@ function Logo() {
 
 function SiteNav() {
     return (
-        <div className="hidden md:flex items-center">
-            <Link href="/doc"><a className="font-semibold py-2 px-3 hover:text-white">Doc</a></Link>
-            <Link href="/examples"><a className="font-semibold py-2 px-3 hover:text-white">Examples</a></Link>
-            <Link href="/contact"><a className="font-semibold py-2 px-3 hover:text-white">Contact</a></Link>
+        <div className="relative items-center py-5 font-extrabold ">
+            <Link href="/contact"><a className="bg-red-700 hover:bg-red-400 py-2 px-3 rounded-xl no-underline text-white">اتصل بنا</a></Link>
+            <Link href="/qui-somme-nous"><a className="bg-red-700 hover:bg-red-400 py-2 px-3 mr-4 rounded-xl no-underline text-white"> من نحن </a></Link>
+            <Link href="/"><a className="bg-red-700 hover:bg-red-400 py-2 px-3 mr-4 rounded-xl no-underline text-white">الرئيسية</a></Link>
         </div>
     )
 }

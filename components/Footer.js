@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
-        <div className="bg-blue-900 text-center font-semibold py-3 text-sm text-blue-300">
-            Social Media {""}
-            <a href="https://google.com" className="text-blue-100 hover:text-white underline">google.com</a>
+        <div dir="rtl" className="bg-red-900 text-center font-semibold py-3 text-sm text-red-50">
+             يمكنكم التواصل معنا عبر صفحات التواصل الخاصة بنا {""}
+            <a href="https://facebook.com" className="text-white hover:underline no-underline">facebook.com</a>
         </div>
     )
 }

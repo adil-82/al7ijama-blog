@@ -13,19 +13,19 @@ import {sortByDate} from '../utils/index'
 export default function Home({posts}) {
   // console.log("posts", posts)
   return (
-    <div className="bg-blue-50" >
+    <div dir="rtl" className="bg-red-50" >
       <Head>
-        <title>Dev Blog</title>
+        <title>مركز الحجامة للطب البديل</title>
       </Head>
 
       <main className="max-w-3xl mx-auto px-3 ">
       <div className=" px-8 py-20 text-center">
           <Hero /> 
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 ">    
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">    
           {posts.map((post, index) => (
             // <h3> {post.frontmatter.title} </h3>
-            <Post post={post} />
+            <Post key={index} post={post} />
           ))}
 
       </div>

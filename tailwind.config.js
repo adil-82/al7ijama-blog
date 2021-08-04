@@ -3,9 +3,16 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+     fontFamily: {
+       'amiri': 'Amiri'
+      }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require('tailwindcss-rtl'),
+    ],
 }
+// https://github.com/psfund/nextjs-tailwind-rtl
